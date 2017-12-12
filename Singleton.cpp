@@ -14,6 +14,7 @@ Singleton::~Singleton(void)
 
 Singleton* Singleton::getInstance()
 {
+    //懒汉模式
     if (nullptr == __instance)
     {
         __instance = new Singleton();
